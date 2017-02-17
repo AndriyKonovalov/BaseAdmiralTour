@@ -11,7 +11,7 @@
 
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-
+	<link rel="stylesheet" type="text/css" href="css/font_awesome/font-awesome.css">
         <link href="css/style.css" rel="stylesheet">
         <link href="css/font.css" rel="stylesheet">
  
@@ -21,9 +21,10 @@
 	<h1 class="main_header">Моніторинг цін онлайн</h1>
 	<div class="nav">
 		<ul>
-			<li class="linkmain"><a href="">Головна</a></li>
-			<li class="search"><a href="">Пошук туру</a></li>
-			<li class="update"><a href="">Оновлення по цінам</a></li>
+			<li class="linkmain menu"><a href="" class="link"><i class="fa fa-database fa-fw" aria-hidden="true"></i>Головна</a></li>
+			<li class="search menu"><a href="" class="link"><i class="fa fa-search fa-fw" aria-hidden="true"></i>Пошук туру</a></li>
+			<li class="update menu"><a href="" class="link"><i class="fa fa-exclamation-circle fa-fw" aria-hidden="true"></i>Оновлення по цінам</a></li>
+			<li class="hotels menu"><a href="" class="link"><i class="fa fa-home fa-fw" aria-hidden="true"></i>Готелі</a></li>
 		</ul>
 	</div>
 	<div class="bigform">
@@ -82,25 +83,93 @@
 						</table>
 					</td>
 					<td class="wdth50">
-						<table class="right_tabel">
+						<table class="right_table">
 							<tbody>
 								<tr>
 									<td class="descr">виліт з</td>
 									<td class="calendar">
 										<p>
-											<input type="text" name="CHECKIN_BEG" class="frm-input date CHECKIN_BEG"  autocomplete="off"   data-calendar='{"valid":"00010020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002","start":"17.02.2017"}'  value="23.02.2017"/>
+											<input type="text" name="CHECKIN_BEG" class="frm-input date CHECKIN_BEG"  autocomplete="off"   data-calendar='{"valid":"00010020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002","start":"17.02.2017"}'  value="23.02.2017"/></i>
 										</p>
 									</td>
 								</tr>
 								<tr>
 									<td class="descr">до</td>
-									<td class="calendar"></td>
+									<td class="calendar">
+										<p>
+											<input type="text" class="frm-input date CHECKIN_END" autocomplete="off" name="CHECKIN_END" data-calendar='{"valid":"1100000000000011000000000000110000010000001000000100000010000001000000120000010000201000000120000010000202000002220020222002022200202220020222002022200202220020222002022200202220020222002022200202220020222002022200002220000222000001000000100000010000001","start":"17.02.2017"}' value="05.05.2017" placeholder="ДД.ММ.ГГГГ">
+										</p>
+									</td>
 								</tr>
 								<tr>
-									<td class="expansion"><a href="">більше</a></td>
+									<td class="more" colspan="2"><a href="">більше</a></td>
 								</tr>
 							</tbody>
 						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="bigtable">
+		<table class="pasteform">
+			<tbody>
+				<tr>
+					<th class="ident">
+						<a href="" title="Ідентифікаційний номер">ID</a>
+					</th>
+					<th class="day">
+						<a href="" title="Дата вильоту"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>Дата</a>
+					</th>
+					<th class="nights">
+						<a href="" title="Кількість ночей"><i class="fa fa-moon-o" aria-hidden="true"></i>Кількість ночей</a>
+					</th>
+					<th class="geo">
+						<a href="" title="Місто відпочинку"><i class="fa fa-map-marker" aria-hidden="true"></i>Місто</a>
+					</th>
+					<th class="site">
+						<a href="" title="Сайт посилання"><i class="fa fa-share" aria-hidden="true"></i>Сайт</a>
+					</th>
+					<th class="hotel" rawspan="2">
+						<a href="" title="Назва готелю"><i class="fa fa-building" aria-hidden="true"></i>Назва готелю</a>
+					</th>
+					<th class="food">
+						<a href="" title="Тип харчування"><i class="fa fa-cutlery" aria-hidden="true"></i>Тип харчування</a>
+					</th>
+					<th class="person">
+						<a href="" title="Кількість людей"><i class="fa fa-users" aria-hidden="true"></i>Кількість людей</a>
+					</th>
+					<th class="check">
+						<a href="" title="Поставте галочку"><i class="fa fa-check-square" aria-hidden="true"></i></a>
+					</th>
+				</tr>
+				<tr>
+					<td class="ident">
+						<a href="" title="Ідентифікаційний номер">000001</a>
+					</td>
+					<td class="day">
+						<a href="" title="Дата вильоту">12.05.2017</a>
+					</td>
+					<td class="nights">
+						<a href="" title="Кількість ночей">Кількість ночей</a>
+					</td>
+					<td class="geo">
+						<a href="" title="Місто відпочинку"></i>Місто</a>
+					</td>
+					<td class="site">
+						<a href="" title="Сайт посилання">Сайт</a>
+					</td>
+					<td class="hotel" rawspan="2">
+						<a href="" title="Назва готелю">Назва готелю</a>
+					</td>
+					<td class="food">
+						<a href="" title="Тип харчування">Тип харчування</a>
+					</td>
+					<td class="person">
+						<a href="" title="Кількість людей">Кількість людей</a>
+					</td>
+					<td class="check">
+						<a href="" title="Поставте галочку"></a>
 					</td>
 				</tr>
 			</tbody>
