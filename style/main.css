@@ -1,4 +1,7 @@
+body {
+	background: #545454;
+}
 h1 {
-	font-size: 20px;
+	font-size: 12px;
 	color: #00d99d;
 }
