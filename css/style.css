@@ -5,46 +5,65 @@ padding: 0;
 
 html { height: 100%; }                          
 body {
-	width: 960px;
+	width: 1200px;
 	margin: 0 auto;
 	font-size: 14px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	height: 100%;
    }                                         
-       
+	   
 a {                                            
    color: blue;
    outline: none;
-   text-decoration: underline;                  
+   text-decoration: none;   
+   font-size: 16px !important;               
 }
-a:hover {                           
-	text-decoration: none;     
+li.menu:hover {                           
+	background-color: blue;
+}
+li.menu:hover a.link {
+	color: #fff;
 }
 li {
 	list-style-type: none;
 }
 
 p, a, em, strong, ol, ul, li, form, label, table, tbody, thead, tr, th, td {
-    border: 0;
-    font-family: inherit;
-    font-size: 100%;
-    font-style: inherit;
-    font-weight: inherit;
-    margin: 0;
-    outline: 0;
-    padding: 0;
-    vertical-align: baseline;
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
 } 
 
+.nav li {	
+	padding-right: 10px;
+	padding-left: 10px;
+	line-height: 30px;
+	display: block;
+	float: left;
+	border-right: 1px dotted #b2b7ae;
+}
+.nav i.fa {
+	padding-right: 5px;
+}
+
 h1.main_header {
+	padding: 30px 5px 20px 5px;
 	font-size: 24px;
+	margin: 0 auto;
 	font: 'Open Sans';
 	font-weight: 400;
 }
 .direction td {
 	padding: 5px 8px !important;
 }
+
 .select_style select {
 	width: 380px;
 	height: 26px;
@@ -62,17 +81,49 @@ h1.main_header {
 	vertical-align: middle;
 	font-size: 12px;
 }
-
+.right_table {
+	height: 140px;
+}
 .date {
 	height: 28px;
 }
 .direction .wdth50 {
 	width: 50% !important;
 }
-div.nav li {  
-	display: inline-block;
+.more {
+	text-align: right;
+	width: 100%;
+}
+.more a {
+	text-decoration: underline;
 }
 
 
+
+/*      Большая таблица       */
+
+table.pasteform {
+	width: 100%;
+	border: 1px solid #dadada;
+}
+table.pasteform td, table.pasteform th {
+	border: 1px solid #dadada;
+}
+.pasteform th {
+	background-color: #3b8745;
+	line-height: 40px;
+}
+.pasteform th i {
+	padding-right: 5px;
+}
+
+.pasteform th a {
+	color: #fff;
+	padding: 5px;
+}
+.pasteform td {
+	text-align: center;
+}
+/*        КОНЕЦ таблицы         */
 
 
