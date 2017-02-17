@@ -10,15 +10,196 @@
 
 
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 
-
-        <link href="/css/style.css" rel="stylesheet">
-        <link href="/css/font.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/font.css" rel="stylesheet">
  
 </head>
 
 <body>
+	<h1 class="main_header">Моніторинг цін онлайн</h1>
+	<div class="nav">
+		<ul>
+			<li><a href="">Головна</a></li>
+			<li><a href="">Пошук туру</a></li>
+			<li><a href="">Оновлення по цінам</a></li>
+		</ul>
+	</div>
+	<div class="bigform">
+		<table class="direction selectionform">
+			<tbody>
+				<tr>
+					<td class="wdth50">
+						<table class="left_table">
+							<tbody>
+								<tr>
+									<td class="direction_left">Вид транспорту</td>
+									<td class="direction_right">
+										<p class="select_style">
+											<select name="trans" class="trans" autocomplete="off">
+												<option value="1">Авіа</option>
+												<option value="2">Власним авто</option>
+												<option value="3">Автобусом</option>
+											</select>
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="direction_left">Місто відправлення</td>
+									<td class="direction_right">
+										<p class="select_style">
+											<select name="city" class="cityfrom" autocomplete="off">
+												<option value="4">Львів</option>
+												<option value="5">Київ</option>
+											</select>
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="direction_left">Країна прибуття</td>
+									<td class="direction_right">
+										<p class="select_style">
+											<select name="state" class="stateto" autocomplete="off">
+												<option value="6">Туреччина</option>
+												<option value="7">Єгипет</option>
+												<option value="8">Болгарія</option>
+												<option value="9">Ізраїль</option>
+												<option value="10">Хорватія</option>
+												<option value="11">Чорногорія</option>
+												<option value="12">Греція</option>
+												<option value="13">Таїланд</option>
+												<option value="14">ОАЕ</option>
+												<option value="15">Туніс</option>
+												<option value="16">Домінікана</option>
+												<option value="17">Шрі-Ланка</option>
+												<option value="18">США</option>
+											</select>
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+					<td class="wdth50">
+						<table class="right_tabel">
+							<tbody>
+								<tr>
+									<td class="descr">виліт з</td>
+									<td class="calendar">
+										<p>
+											<input type="text" name="CHECKIN_BEG" class="frm-input date CHECKIN_BEG"  autocomplete="off"   data-calendar='{"valid":"00010020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002000200200020020002002","start":"17.02.2017"}'  value="23.02.2017"/>
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="descr">до</td>
+									<td class="calendar"></td>
+								</tr>
+								<tr>
+									<td class="expansion"><a href="">більше</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!--   **Begin Calendar**
 
+	<div class="Zebra_DatePicker dp_visible" style="left: 420.5px; top: 594px;">
+		<table class="dp_header" style="width: 250px;">
+			<tbody>
+				<tr>
+					<td class="dp_previous">«</td>
+					<td class="dp_caption">Май, 2017</td>
+					<td class="dp_next">»</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="dp_daypicker">
+			<tbody>
+				<tr>
+					<th>Пн</th>
+					<th>Вт</th>
+					<th>Ср</th>
+					<th>Чт</th>
+					<th>Пт</th>
+					<th>Сб</th>
+					<th>Вс</th>
+				</tr>
+				<tr>
+					<td class="dp_disabled">1</td>
+					<td class="dp_disabled">2</td>
+					<td class="dp_disabled">3</td>
+					<td class="dp_disabled">4</td>
+					<td class="dp_disabled">5</td>
+					<td class="dp_weekend_disabled">6</td>
+					<td class="dp_weekend_disabled">7</td>
+				</tr>
+				<tr>
+					<td class="dp_disabled">8</td>
+					<td class="dp_disabled">9</td>
+					<td class="dp_disabled">10</td>
+					<td class="dp_disabled">11</td>
+					<td class="dp_selected dp_highlight yesplace">12</td>
+					<td class="dp_weekend_disabled">13</td>
+					<td class="dp_weekend_disabled">14</td>
+				</tr>
+				<tr>
+					<td class="dp_disabled">15</td>
+					<td class="dp_disabled">16</td>
+					<td class="dp_disabled">17</td>
+					<td class="dp_disabled">18</td>
+					<td class="dp_disabled">19</td>
+					<td class="dp_weekend_disabled">20</td>
+					<td class="dp_weekend_disabled">21</td>
+				</tr>
+				<tr>
+					<td class="dp_disabled">22</td>
+					<td class="dp_disabled">23</td>
+					<td class="dp_disabled">24</td>
+					<td class="dp_disabled">25</td>
+					<td class="dp_disabled">26</td>
+					<td class="dp_weekend_disabled">27</td>
+					<td class="dp_weekend_disabled">28</td>
+				</tr>
+				<tr>
+					<td class="dp_disabled">29</td>
+					<td class="dp_disabled">30</td>
+					<td class="dp_highlight yesplace">31</td>
+					<td class="dp_not_in_month">1</td>
+					<td class="dp_not_in_month">2</td>
+					<td class="dp_not_in_month_selectable date_20170603 dp_highlight yesplace">3</td>
+					<td class="dp_not_in_month">4</td>
+				</tr>
+				<tr><td class="dp_not_in_month">5</td>
+					<td class="dp_not_in_month">6</td>
+					<td class="dp_not_in_month_selectable date_20170607 dp_highlight yesplace">7</td>
+					<td class="dp_not_in_month">8</td>
+					<td class="dp_not_in_month">9</td>
+					<td class="dp_not_in_month_selectable date_20170610 dp_highlight yesplace">10</td>
+					<td class="dp_not_in_month">11</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="dp_monthpicker" style="width: 250px; height: 200px; display: none;"></table>
+		<table class="dp_yearpicker" style="width: 250px; height: 200px; display: none;"></table>
+		<div class="dp_legend">
+			<span class="dp_highlight yesplace">&nbsp;</span>
+			<span class="dp_caption">есть места</span>
+		</div>
+		<table class="dp_footer" style="width: 250px; display: none;">
+			<tbody>
+				<tr>
+					<td class="dp_today">false</td>
+					<td class="dp_clear" style="display: none;">Clear date</td>
+				</tr>
+			</tbody>
+		</table>
+	</div> 
+	END CALENDAR-->
 
 </body>
 
